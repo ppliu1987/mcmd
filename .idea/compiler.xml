@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mcmd-application" />
+        <module name="mcmd-start" />
+        <module name="mcmd-mapper" />
+        <module name="mcmd-web" />
+        <module name="mcmd-common" />
+        <module name="mcmd-domain" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mcmd-service" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mcmd-application" options="-parameters" />
+      <module name="mcmd-common" options="-parameters" />
+      <module name="mcmd-domain" options="-parameters" />
+      <module name="mcmd-mapper" options="-parameters" />
+      <module name="mcmd-service" options="-parameters" />
+      <module name="mcmd-start" options="-parameters" />
+      <module name="mcmd-web" options="-parameters" />
+    </option>
+  </component>
+</project>

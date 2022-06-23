@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /mcmd
+spring:
+  application:
+    name: mcmd
+############################ actuator默认只开启了info和health两个端点 #####################################
+management:
+  endpoint:
+    httptrace:
+      enabled: true
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+      base-path: /
